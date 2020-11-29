@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="shortcut icon" href="img/favicon256.ico">
+<title>元号ジェネレーター by SiraKen</title>
+<!-- Bootstrap Styles -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Generate -->
+<script type="text/javascript" src="js/script.js"></script>
+<style media="screen">
+a:hover { text-decoration: none; opacity: .5; }
+span { display: block; }
+.jumbotron { background: url(bg.jpg) center; background-size: cover; color: #fff; }
+.colorMod a { color: skyblue; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark fixed-bottom">
+	<div class="mx-auto text-muted colorMod">
+		Created by <a href="https://siraken.github.io/">SiraKen</a> | <a href="https://github.com/SiraKen/era_generator">Fork me on <i class="fab fa-github"></i></a>
+	</div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container" style="text-align: center;">
+        <h1 class="h2">元号ジェネレーター</h1>
+        <p class="lead">
+					<span>日本の元号に使われたことのある漢字を組み合わせて、</span><span>新しい元号を生成するプログラムです。</span>
+				</p>
+        <button type="button" class="btn btn-primary btn-lg" onclick="generate();">生成する！</button>
+				<span class="colorMod" style="position: relative; top: 15px; font-size: 80%;">
+					Background Photo by <a href="https://unsplash.com/@tianshu?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tianshu Liu</a> on <a href="https://unsplash.com/s/photos/japan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a><br>
+					Made with <i class="fab fa-js"></i>JavaScript | Update: 2020/07/03
+				</span>
+    </div>
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="col" style="text-align: center;">
+	<h3 class="texts" style="display: inline-block;">あなたが創り出した元号は</h3>
+	<span>
+	<h1 id="insertName" class="texts" style="display: inline-block;">「◯◯」</h1><h3 class="texts" style="display: inline; position: relative; left: -10px;">です。</h3></span>
+	<a href="#" class="btn btn-primary btn-sm" role="button" aria-pressed="true" id="a" href="#" onclick="tweet();">
+		<i class="fab fa-twitter"></i> ツイートする!!
+	</a>
+</div>
+</div>
+</div>
+
+<!-- Load JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$('[data-toggle="tooltip"]').tooltip();
+</script>
+<!-- Load JavaScript End -->
+</body>
+</html>
